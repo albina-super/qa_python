@@ -1,1 +1,24 @@
 # qa_python
+
+Реализовала по одному тесту на каждый метод BooksCollector, в основном все успешные кейсы.
+Список тестов:
+
+test_add_new_book_add_two_books
+
+test_add_new_book_validate_length_title (с параметризацией: EMPTY_TITLE, TITLE_MORE_41_SYMBOL)
+
+test_set_book_genre_success
+
+test_get_book_genre_success
+
+test_get_books_with_specific_genre_success
+
+test_get_books_genre
+
+test_get_books_for_children_success
+
+test_add_book_in_favorites_success
+
+test_delete_book_from_favorites_success
+
+test_get_list_of_favorites_books_success
