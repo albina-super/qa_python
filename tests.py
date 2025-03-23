@@ -49,7 +49,7 @@ class TestBooksCollector:
 
 
     def test_add_book_in_favorites_success(self, collector_book_with_genre):
-        collector_book_with_genre.favorites.append(VALIDE_BOOK)
+        collector_book_with_genre.add_book_in_favorites(VALIDE_BOOK)
         assert VALIDE_BOOK in collector_book_with_genre.favorites
 
 
@@ -59,5 +59,4 @@ class TestBooksCollector:
 
 
     def test_get_list_of_favorites_books_success(self, collector_with_favorites):
-        assert type(collector_with_favorites.get_list_of_favorites_books()) == list
-        assert len(collector_with_favorites.get_list_of_favorites_books()) != 0
+        assert VALIDE_BOOK in collector_with_favorites.get_list_of_favorites_books()
